@@ -19,6 +19,7 @@ let input = document
       document.querySelector(".message").textContent = "🎉 Correct Number 🎉";
       document.querySelector(".number").textContent = secretNumber;
       document.querySelector(".highest").textContent = score;
+      document.body.style.backgroundColor = "#60b347";
     } else if (input > secretNumber) {
       document.querySelector(".message").textContent = "To High📈";
       score = score - 1;
@@ -39,4 +40,7 @@ let reset = document
     document.querySelector(".number").textContent = "?";
     document.querySelector(".input").value = "";
     document.querySelector(".message").textContent = "Start guessing.....";
+    document.body.style.backgroundColor = "black";
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    console.log(secretNumber);
   });

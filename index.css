@@ -4,6 +4,17 @@
   color: white;
   background-color: black;
   font-family: "Press Start 2P", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .reset {
@@ -13,28 +24,44 @@
   width: 140px;
   height: 50px;
   font-size: 20px;
+  margin-bottom: 10px;
 }
+
 .between {
-  position: absolute;
-  right: 2%;
-  top: 0%;
   font-size: 20px;
-  font-stretch: expanded;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
 .title {
   text-align: center;
-  margin-top: 5%;
+  margin-bottom: 20px;
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 40px;
 }
+
+.mainResult {
+  width: 150px;
+  height: 100px;
+  margin: 20px auto;
+  border: 2px solid white;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
 .input {
   border: solid white 2px;
   width: 140px;
-  height: 60px;
-  font-size: 30px;
-  position: fixed;
-  top: 55%;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
 }
+
 .calculate {
   background-color: white;
   color: black;
@@ -42,38 +69,18 @@
   width: 140px;
   height: 50px;
   font-size: 20px;
-  position: fixed;
-  top: 65%;
-}
-
-.mainResult {
-  position: absolute;
-  width: 150px;
-  height: 50px;
-  top: 30%;
-  left: 0%;
-  right: 0%;
-  margin: auto;
-  border: 2px solid white;
-  font-size: 50px;
-  text-align: center;
-  background-color: white;
-  color: black;
+  margin-top: 10px;
 }
 
 .message {
-  position: absolute;
-  top: 60%;
-  right: 10%;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 
-.updatescore {
-  position: absolute;
-  top: 70%;
-  right: 15%;
-}
+.updatescore,
 .highscore {
-  position: absolute;
-  top: 75%;
-  right: 15%;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
 }

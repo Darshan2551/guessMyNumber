@@ -14,7 +14,7 @@ let input = document
   .addEventListener("click", function () {
     const input = parseInt(document.querySelector(".input").value);
     if (isNaN(input) || input <= 0) {
-      document.querySelector(".message").textContent = "Error! No";
+      document.querySelector(".message").textContent = "Error! NAN";
     } else if (secretNumber === input) {
       document.querySelector(".message").textContent = "🎉 Correct Number 🎉";
       document.querySelector(".number").textContent = secretNumber;
@@ -35,7 +35,8 @@ let reset = document
   .addEventListener("click", function () {
     score = 20;
     document.querySelector(".score").textContent = score;
-    document.querySelector(".highest").textContent = 0;
+    // document.querySelector(".highest").textContent = 0;
     document.querySelector(".number").textContent = "?";
     document.querySelector(".input").value = "";
+    document.querySelector(".message").textContent = "Start guessing.....";
   });

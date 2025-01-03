@@ -8,6 +8,8 @@ document.querySelector(".highest").textContent = 2;
 */
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = Number(document.querySelector(".score").textContent);
+let highest = 0;
+
 console.log(secretNumber);
 let input = document
   .querySelector(".calculate")
@@ -18,8 +20,12 @@ let input = document
     } else if (secretNumber === input) {
       document.querySelector(".message").textContent = "🎉 Correct Number 🎉";
       document.querySelector(".number").textContent = secretNumber;
-      document.querySelector(".highest").textContent = score;
+
       document.body.style.backgroundColor = "#60b347";
+      if (score > highest) {
+        highest = score;
+      }
+      document.querySelector(".highest").textContent = highest;
     } else if (input > secretNumber) {
       document.querySelector(".message").textContent = "To High📈";
       score = score - 1;
